@@ -19,6 +19,13 @@ public class Cuenta {
         this.cantidad = 0;
     }
     
+    public Cuenta(final Cuenta c){
+        
+        titular = c.titular;
+        cantidad = c.cantidad;
+        
+    }
+    
     public String getTitular(){
         return titular;
     }
