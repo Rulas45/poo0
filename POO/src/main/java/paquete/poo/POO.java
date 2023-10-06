@@ -11,6 +11,6 @@ package paquete.poo;
 public class POO {
 
     public static void main(String[] args) {
-        System.out.println("Hola chicos de DAM");
+        System.out.println("Hola chicos");
     }
 }
