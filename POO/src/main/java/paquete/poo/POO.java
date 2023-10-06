@@ -1,16 +1,41 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
+
 
 package paquete.poo;
 
-/**
- *
- * @author Profesortarde
- */
+
 public class POO {
 
     public static void main(String[] args) {
-        System.out.println("Hola chicos");
+        
+        /*
+        
+        Crea una clase llamada Cuenta que tendrá los siguientes 
+        atributos: titular y cantidad (puede tener decimales).
+
+        El titular será obligatorio y la cantidad es opcional. 
+        Crea dos constructores que cumpla lo anterior.
+
+        Crea sus métodos get, set y toString.
+
+        Tendrá dos métodos especiales:
+
+        ingresar(double cantidad): se ingresa una cantidad a 
+        la cuenta, si la cantidad introducida es negativa, no se 
+        hará nada.
+        retirar(double cantidad): se retira una cantidad a 
+        la cuenta, si restando la cantidad actual a la que nos 
+        pasan es negativa, la cantidad de la cuenta pasa a ser 0.
+        
+        
+        */
+        
+        Cuenta cuenta1 = new Cuenta("Rafa");
+        Cuenta cuenta2 = new Cuenta("Pepe",50);
+        
+        cuenta2.retirar(100);
+        
+        System.out.println(cuenta2.getCantidad());
+       
+       
     }
 }
